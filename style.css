@@ -109,7 +109,7 @@ header {
   outline: none;
   width: 100%;
   color: black;
-  background: rgba(255, 255, 255, 0.7);
+  background: #ffbb07;
   cursor: pointer;
   transition: 0.3s;
 }
