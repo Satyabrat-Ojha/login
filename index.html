@@ -2,48 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML5 Login Form with validation Example</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" />
+
+    <title>Login Form</title>
   </head>
   <body>
-    <!-- partial:index.partial.html -->
-    <div id="login-form-wrap">
-      <h2>Login</h2>
-      <form id="login-form">
-        <p>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          /><i class="validation"><span></span><span></span></i>
-        </p>
-        <p>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-            required
-          />
-        </p>
-        <p>
-          <input type="submit" id="login" value="Login" />
-        </p>
-      </form>
-      <div id="create-account-wrap">
-        <p>Not a member? <a href="/signup.html">Create Account</a></p>
-        <p></p>
-      </div>
+    <div class="box">
+      <div class="container">
+        <div class="top">
+          <header>Login Form</header>
+        </div>
+        <form>
+          <div class="input-field">
+            <input
+              type="text"
+              class="input"
+              placeholder="Name"
+              id=""
+              required
+            />
+          </div>
 
-      <!--create-account-wrap-->
+          <div class="input-field-option">
+            <label for="employee">Are you employee:</label>
+            <select id="" name="employee">
+              <option value="false">No</option>
+              <option value="true">Yes</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <input
+              type="text"
+              class="input"
+              placeholder="Mobile No."
+              id=""
+              required
+            />
+          </div>
+
+          <div class="input-field">
+            <input
+              type="email"
+              class="input"
+              placeholder="Email Id"
+              id=""
+              required
+            />
+          </div>
+
+          <div class="input-field-option">
+            <label for="dateofreg">Date of Registration: </label>
+            <input type="date" class="input" id="" name="dateofreg" required />
+          </div>
+
+          <div class="input-field-option">
+            <label for="gender">Gender:</label>
+            <select id="" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="input-field-option">
+            <label for="martial">Martial Status:</label>
+            <select id="" name="martial">
+              <option value="false">Unmarried</option>
+              <option value="true">Married</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <input type="submit" class="submit" value="Login" id="" />
+          </div>
+        </form>
+        <a href="index.html">Have an account? Login</a>
+      </div>
     </div>
-    <!--login-form-wrap-->
-    <!-- partial -->
   </body>
 </html>
